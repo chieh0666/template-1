@@ -1,0 +1,70 @@
+/* 重置 */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "微軟正黑體", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img,
+iframe {
+  width: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+button,
+textarea {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+}
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+/* 英文對齊 */
+[lang-size="en"] p {
+  text-align: left;
+}
+
+/* 外距 */
+/* 5px */
+.mb-03125 {
+  margin-bottom: 0.3125rem;
+}
+/* 100px */
+.mt-625 {
+  margin-top: 6.25rem;
+}
+/* 10px */
+.my-0625 {
+  margin: 0.625rem 0;
+}
+
+/* 內距 */
+/* 20px */
+.p-125 {
+  padding: 1.25rem;
+}
+
+/* 色彩 */
+
+
+
+
+
+
+
+
+/* 搜尋輸入框啟用後的外觀設定 */
+.search-form input:focus {
+  outline: none;
+}
