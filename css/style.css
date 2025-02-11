@@ -40,16 +40,26 @@ textarea {
 .mb-03125 {
   margin-bottom: 0.3125rem;
 }
+/* 10px */
+.my-0625 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
 /* 100px */
 .mt-625 {
   margin-top: 6.25rem;
 }
-/* 10px */
-.my-0625 {
-  margin: 0.625rem 0;
+/* 50px */
+.mt-3125 {
+  margin-top: 3.125rem;
 }
 
 /* 內距 */
+/* 5px */
+.py-03125 {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+}
 /* 20px */
 .p-125 {
   padding: 1.25rem;
@@ -57,14 +67,39 @@ textarea {
 
 /* 色彩 */
 
-
-
-
-
-
-
-
 /* 搜尋輸入框啟用後的外觀設定 */
 .search-form input:focus {
   outline: none;
+}
+.search-btn:hover {
+  background-color: #d4d4d44d !important;
+}
+
+#hot-product .card ul,
+#new-product .card ul {
+  bottom: -60px;
+  transition: 0.3s;
+}
+
+#hot-product .card:hover ul,
+#new-product .card:hover ul {
+  bottom: 0;
+}
+
+#hot-product .card ul li:hover,
+#new-product .card ul li:hover {
+  background-color: #d3d3d32f;
+}
+
+#hot-product .card-text span::before,
+#new-product .card-text span::before {
+  content: "NT$ ";
+  /* padding-right: 0.3125rem; */
+}
+
+#hot-product .card-text span::after,
+#new-product .card-text span::after {
+  content: " 元";
+  /* padding-left: 0.3125rem; */
+  /* font-size: 90%; */
 }
