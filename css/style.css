@@ -49,10 +49,6 @@ textarea {
 .mt-625 {
   margin-top: 6.25rem;
 }
-/* 50px */
-.mt-3125 {
-  margin-top: 3.125rem;
-}
 
 /* 內距 */
 /* 5px */
@@ -94,12 +90,9 @@ textarea {
 #hot-product .card-text span::before,
 #new-product .card-text span::before {
   content: "NT$ ";
-  /* padding-right: 0.3125rem; */
 }
 
 #hot-product .card-text span::after,
 #new-product .card-text span::after {
   content: " 元";
-  /* padding-left: 0.3125rem; */
-  /* font-size: 90%; */
 }
