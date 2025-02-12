@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./js/ui-main/dist/carousel/carousel.css">
+  <link rel="stylesheet" href="./js/ui-main/dist/carousel/carousel.autoplay.css">
 </head>
 <body id="home">
   <!-- header -->
@@ -136,7 +138,12 @@
           </div>
           <!-- 行銷圖banner -->
           <div class="col-lg-9 col-md-12 shadow">
-            <img src="./images/banner1.jpg" alt="行銷圖">
+            <div class="f-carousel" id="myCarousel">
+              <div class="f-carousel__slide"><img src="./images/banner1.jpg" alt="行銷圖"></div>
+              <div class="f-carousel__slide"><img src="./images/banner2.jpg" alt="行銷圖"></div>
+              <div class="f-carousel__slide"><img src="./images/banner3.jpg" alt="行銷圖"></div>
+            </div>
+            <!-- <img src="./images/banner1.jpg" alt="行銷圖"> -->
           </div>
         </div>
       </article>
@@ -705,6 +712,8 @@
   </footer>
   <!-- js -->
   <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/ui-main/dist/carousel/carousel.umd.js"></script>
+  <script src="./js/ui-main/dist/carousel/carousel.autoplay.umd.js"></script>
   <script>
     $(document).ready(function(){
       $('.search-input').focus(function(){
@@ -716,6 +725,11 @@
         $('.search-btn').removeClass('border-primary').addClass('border-secondary-subtle');
       })
     });
+  </script>
+  <script>
+    const container = document.getElementById("myCarousel");
+    const options = { infinite: true, Autoplay: {timeout: 3000} };
+    new Carousel(container, options, { Autoplay });
   </script>
 </body>
 </html>
