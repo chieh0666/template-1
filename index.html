@@ -79,7 +79,7 @@
       </nav>
     </div>
     <!-- 廣告或重要事項通知時顯示 -->
-    <div class="text-center text-danger border border-danger py-03125 fs-4">
+    <div class="notify text-center text-danger border border-danger py-03125 fs-4">
       <span>公告訊息</span>
     </div>
   </header>
@@ -90,18 +90,48 @@
       <div class="container">
         <div class="row g-1">
           <!-- 商品分類側邊欄 -->
-          <div class="col-lg-3 col-md-12 bg-light shadow p-3">
-            <ul class="mb-0 px-4 py-3">
-              <span class="fs-4">
+          <div class="col-lg-3 col-md-12 shadow p-3">
+            <ul class="list-group list-group-flush">
+              <span class="fs-5">
                 <i class="bi bi-list"></i>
                 商品分類
               </span>
-              <li class="fs-5"><a href="#">種類一</a></li>
-              <li class="fs-5"><a href="#">種類二</a></li>
-              <li class="fs-5"><a href="#">種類三</a></li>
-              <li class="fs-5"><a href="#">種類四</a></li>
-              <li class="fs-5"><a href="#">種類五</a></li>
-              <li class="fs-5"><a href="#">種類六</a></li>
+              <div class="list-group-item-action fs-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="px-4 py-1"><a href="#">種類一</a></div>
+                  <div class="px-2 py-1"><i class="bi bi-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="list-group-item-action fs-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="px-4 py-1"><a href="#">種類二</a></div>
+                  <div class="px-2 py-1"><i class="bi bi-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="list-group-item-action fs-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="px-4 py-1"><a href="#">種類三</a></div>
+                  <div class="px-2 py-1"><i class="bi bi-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="list-group-item-action fs-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="px-4 py-1"><a href="#">種類四</a></div>
+                  <div class="px-2 py-1"><i class="bi bi-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="list-group-item-action fs-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="px-4 py-1"><a href="#">種類五</a></div>
+                  <div class="px-2 py-1"><i class="bi bi-caret-right"></i></div>
+                </div>
+              </div>
+              <div class="list-group-item-action fs-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="px-4 py-1"><a href="#">種類六</a></div>
+                  <div class="px-2 py-1"><i class="bi bi-caret-right"></i></div>
+                </div>
+              </div>
             </ul>
           </div>
           <!-- 行銷圖banner -->
@@ -116,7 +146,9 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            <h2><span class="border-start border-top ps-2 pt-1 border-3">熱銷商品</span></h2>
+            <h2>
+              <span class="border-start border-top ps-2 pt-1 border-3">熱銷商品</span>
+            </h2>
           </div>
           <div class="row row-cols-2 row-cols-md-3 row-cols-xxl-6 g-2">
             <div class="col">
@@ -149,7 +181,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="fs-4 p-2">500</span>
                     <span class="text-decoration-line-through p-2">10000</span>
                   </p>
@@ -186,7 +218,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <span class="text-decoration-line-through p-2">10000</span>
                   </p>
@@ -223,7 +255,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <!-- <span class="text-decoration-line-through p-2">10000</span> -->
                   </p>
@@ -260,7 +292,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <!-- <span class="text-decoration-line-through p-2">10000</span> -->
                   </p>
@@ -297,7 +329,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <!-- <span class="text-decoration-line-through p-2">10000</span> -->
                   </p>
@@ -334,7 +366,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <span class="text-decoration-line-through p-2">10000</span>
                   </p>
@@ -384,7 +416,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="fs-4 p-2">500</span>
                     <span class="text-decoration-line-through p-2">10000</span>
                   </p>
@@ -421,7 +453,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <span class="text-decoration-line-through p-2">10000</span>
                   </p>
@@ -458,7 +490,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <!-- <span class="text-decoration-line-through p-2">10000</span> -->
                   </p>
@@ -495,7 +527,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <!-- <span class="text-decoration-line-through p-2">10000</span> -->
                   </p>
@@ -532,7 +564,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <!-- <span class="text-decoration-line-through p-2">10000</span> -->
                   </p>
@@ -569,7 +601,7 @@
                 </div>
                 <div class="card-body text-center">
                   <h3 class="card-title h4">商品名稱</h3>
-                  <p class="card-text fst-italic">
+                  <p class="price card-text fst-italic">
                     <span class="sale fs-4 p-2">500</span>
                     <span class="text-decoration-line-through p-2">10000</span>
                   </p>
@@ -666,5 +698,14 @@
       </div>
     </div>
   </footer>
+  <!-- js -->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.search').focus(function(){
+        $('.search-form').removeClass('border-secondary-subtle').addClass('border-primary');
+      }) 
+    });
+  </script>
 </body>
 </html>

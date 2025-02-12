@@ -30,9 +30,14 @@ textarea {
   background-repeat: no-repeat;
   background-position: center top;
 }
+
 /* 英文對齊 */
 [lang-size="en"] p {
   text-align: left;
+}
+/* 文字段落左右對齊 */
+p:not(.price) {
+  text-align: justify;
 }
 
 /* 外距 */
@@ -45,6 +50,10 @@ textarea {
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
 }
+/* 30px */
+.mt-1875 {
+  margin-top: 1.875rem;
+}
 /* 100px */
 .mt-625 {
   margin-top: 6.25rem;
@@ -55,6 +64,11 @@ textarea {
 .py-03125 {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
+}
+/* 30px */
+.py-1875 {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 /* 20px */
 .p-125 {
@@ -71,28 +85,30 @@ textarea {
   background-color: #d4d4d44d !important;
 }
 
+/* 商品列表 */
 #hot-product .card ul,
 #new-product .card ul {
   bottom: -60px;
   transition: 0.3s;
 }
-
 #hot-product .card:hover ul,
 #new-product .card:hover ul {
   bottom: 0;
 }
-
 #hot-product .card ul li:hover,
 #new-product .card ul li:hover {
   background-color: #d3d3d32f;
 }
-
 #hot-product .card-text span::before,
 #new-product .card-text span::before {
   content: "NT$ ";
 }
-
 #hot-product .card-text span::after,
 #new-product .card-text span::after {
   content: " 元";
+}
+
+/* 只有首頁顯示通知訊息 */
+body .notify:not(#home .notify) {
+  display: none;
 }
