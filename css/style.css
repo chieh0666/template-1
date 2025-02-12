@@ -78,7 +78,7 @@ p:not(.price) {
 /* 色彩 */
 
 /* 搜尋輸入框啟用後的外觀設定 */
-.search-form input:focus {
+.search-form .search-input:focus {
   outline: none;
 }
 .search-btn:hover {
@@ -99,16 +99,26 @@ p:not(.price) {
 #new-product .card ul li:hover {
   background-color: #d3d3d32f;
 }
-#hot-product .card-text span::before,
-#new-product .card-text span::before {
+#hot-product .card-text span:nth-of-type(1)::before,
+#new-product .card-text span:nth-of-type(1)::before,
+#hot-product .card-text span:nth-of-type(3)::before,
+#new-product .card-text span:nth-of-type(3)::before {
   content: "NT$ ";
 }
-#hot-product .card-text span::after,
-#new-product .card-text span::after {
+#hot-product .card-text span:nth-of-type(1)::after,
+#new-product .card-text span:nth-of-type(1)::after,
+#hot-product .card-text span:nth-of-type(3)::after,
+#new-product .card-text span:nth-of-type(3)::after {
   content: " 元";
 }
 
 /* 只有首頁顯示通知訊息 */
 body .notify:not(#home .notify) {
   display: none;
+}
+
+/* 聯絡表單textarea設為不能改變寬高並固定高度 */
+#for-message {
+  resize: none;
+  height: 150px;
 }
