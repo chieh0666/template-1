@@ -132,3 +132,12 @@ body .notify:not(#home .notify) {
   resize: none;
   height: 150px;
 }
+
+/* 輪播圖 */
+.f-carousel {
+  margin-bottom: 0 !important;
+  position: relative;
+}
+.f-carousel__dots {
+  bottom: 1px !important;
+}
