@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模板一</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="mb-03125">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="col-1 m-2">
+          <h1 class="m-0">
+            <a href="./index.html" title="回首頁">
+              <img src="./images/logo_tab.png" alt="YUJ">
+              <span class="d-none">YUJ網頁設計</span>
+            </a>
+          </h1>
+        </div>
+        <!-- search form -->
+        <div class="search-form border border-secondary-subtle rounded-pill w-50 h-auto ps-2 overflow-hidden">
+          <form action="#" method="get">
+            <div class="d-flex align-items-center justify-content-between">
+              <label for="for-search">
+                <span class="d-none">搜尋</span>
+              </label>
+              <input type="search" class="w-100 p-2 search-input" name="" id="" placeholder="搜尋" title="請輸入關鍵字">
+              <button class="search-btn bg-light border-start border-secondary-subtle py-2 px-3" type="submit" title="搜尋按鈕">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- user、cart button -->
+        <div class="d-flex fs-5 p-1">
+          <div>
+            <a href="#" title="前往會員登入">
+              <i class="bi bi-person-circle"></i>
+              <span class="d-none d-md-inline-block">登入</span>
+            </a>
+          </div>
+          <span class="px-2">|</span>
+          <div>
+            <a href="#" title="前往我的購物車">
+              <i class="bi bi-cart"></i>
+              <span>99+</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- nav -->
+      <nav class="py-1">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./new-product.html" title="前往最新商品">最新商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./promotion.html" title="前往促銷活動">促銷活動</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html" title="前往最新消息">最新消息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html" title="前往關於我們">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 廣告或重要事項通知時顯示 -->
+    <div class="notify text-center text-danger border border-danger py-03125 fs-5">
+      <span>公告訊息</span>
+    </div>
+  </header>
+  <!-- main content -->
+  <main>
+    <div class="container">
+      <!-- new product list -->
+      <div class="text-center">
+        <h2 class="py-1875">
+          <span class="border-start border-top ps-2 pt-1 border-3">所有商品</span>
+        </h2>
+      </div>
+      <article id="products" class="mt-1875">
+        <div class="row align-items-top justify-content-center">
+          <div class="d-none d-xxl-inline-block col-3">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    種類一
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush ">
+                      <li class="list-group-item list-group-item-action">An item</li>
+                      <li class="list-group-item list-group-item-action">A second item</li>
+                      <li class="list-group-item list-group-item-action">A third item</li>
+                      <li class="list-group-item list-group-item-action">A fourth item</li>
+                      <li class="list-group-item list-group-item-action">And a fifth one</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    種類二
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush ">
+                      <li class="list-group-item list-group-item-action">An item</li>
+                      <li class="list-group-item list-group-item-action">A second item</li>
+                      <li class="list-group-item list-group-item-action">A third item</li>
+                      <li class="list-group-item list-group-item-action">A fourth item</li>
+                      <li class="list-group-item list-group-item-action">And a fifth one</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    種類三
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush ">
+                      <li class="list-group-item list-group-item-action">An item</li>
+                      <li class="list-group-item list-group-item-action">A second item</li>
+                      <li class="list-group-item list-group-item-action">A third item</li>
+                      <li class="list-group-item list-group-item-action">A fourth item</li>
+                      <li class="list-group-item list-group-item-action">And a fifth one</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    種類四
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush ">
+                      <li class="list-group-item list-group-item-action">An item</li>
+                      <li class="list-group-item list-group-item-action">A second item</li>
+                      <li class="list-group-item list-group-item-action">A third item</li>
+                      <li class="list-group-item list-group-item-action">A fourth item</li>
+                      <li class="list-group-item list-group-item-action">And a fifth one</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  class="col-9 row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2 mt-0">
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product4.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product2.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product4.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <span class="text-decoration-line-through p-2">10000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product2.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product4.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <span class="text-decoration-line-through p-2">10000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product2.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product4.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <span class="text-decoration-line-through p-2">10000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product2.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product4.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <span class="text-decoration-line-through p-2">10000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product2.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product4.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <span class="text-decoration-line-through p-2">10000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-0">
+              <div class="card h-100 border-0">
+                <div class="position-relative overflow-hidden">
+                  <img src="./images/product2.jpg" class="card-img-top rounded-3" alt="商品圖">
+                  <span class="position-absolute top-0 end-0 bg-danger px-3 py-1 m-1 rounded-pill text-light fw-bold">HOT</span>
+                  <!-- 收藏、加入購物車、連結詳情頁 -->
+                  <ul class="list-unstyled d-flex align-items-center justify-content-between position-absolute start-0 end-0 mt -3 ms-3 me-3 bg-dark bg-opacity-75 rounded-start-pill rounded-end-pill overflow-hidden">
+                    <a class="col text-center" href="javascript:;" title="點擊加入喜歡清單">
+                      <li class="py-1">
+                        <i class="bi bi-heart-fill text-light"></i>
+                        <span class="d-none">加入喜歡清單</span>
+                      </li>
+                    </a>
+                    <a class="border-start border-end border-secondary border-opacity-75 col-6 text-center" href="javascript:;" title="點擊加入購物車">
+                      <li class="py-1">
+                        <i class="bi bi-plus-lg text-light"></i>
+                        <i class="bi bi-cart-fill text-light"></i>
+                        <span class="d-none">加入購物車</span>
+                      </li>
+                    </a>
+                    <a class="col text-center" href="./product-detail.html" title="點擊前往商品詳情">
+                      <li class="py-1">
+                        <i class="bi bi-info-circle-fill text-light"></i>
+                        <span class="d-none">商品詳情</span>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="card-title h4">商品名稱</h3>
+                  <p class="price card-text fst-italic">
+                    <span class="sale fs-4 p-2">500</span>
+                    <span class="d-lg-none"><br/></span>
+                    <!-- <span class="text-decoration-line-through p-2">10000</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="mt-625">
+    <div class="container">
+      <div class="footer-top border-top border-bottom border-secondary-subtle p-125">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <!-- logo -->
+            <div class="text-center">
+              <a class="col-3" href="./index.html">
+                <img src="./images/logo_tab.png" alt="YUJ網頁設計">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="h5 text-center"><span class="border-start border-top ps-2 pt-1 border-3">連結</span></h3>
+            <ul class="text-center row row-cols-2 row-cols-md-1 g-1 ps-0">
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./products.html" title="前往所有商品">所有商品</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./new-product.html" title="前往最新商品">最新商品</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./promotion.html" title="前往促銷活動">促銷活動</a>
+                </span>
+              </li>
+              <li><span class="border-start border-3 ps-2">
+                <a href="./news.html" title="前往最新消息">最新消息</a>
+              </span>
+            </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./about.html" title="前往關於我們">關於我們</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="h5 text-center"><span class="border-start border-top ps-2 pt-1 border-3">聯絡資訊</span></h3>
+            <ul class="ps-0">
+              <li>
+                <span class="border-start border-3 ps-2">客服專線：
+                  <a href="tel:0912-345-678" title="專線：0912-345-678">0912-345-678</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">電子信箱：
+                  <a href="mailto:service@abc.com" title="聯絡信箱：service@abc.com">service@abc.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">地　　址：
+                  <a href="https://maps.app.goo.gl/BA4F2sMTMd6a8Hjg9" title="前往Google map[另開視窗]" target="_blank">台南市北區和緯路三段220號</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  營業時間：週二 ~ 週日 11:00 - 21:00
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  店休時間：週一
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom my-0625 text-center">
+        <small>&copy;2025 YUJ 網頁設計</small>
+      </div>
+    </div>
+  </footer>
+  <!-- js -->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/component.js"></script>
+</body>
+</html>

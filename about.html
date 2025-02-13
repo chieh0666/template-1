@@ -79,7 +79,7 @@
       </nav>
     </div>
     <!-- 廣告或重要事項通知時顯示 -->
-    <div class="notify text-center text-danger border border-danger py-03125 fs-4">
+    <div class="notify text-center text-danger border border-danger py-03125 fs-5">
       <span>公告訊息</span>
     </div>
   </header>
@@ -203,17 +203,6 @@
   </footer>
   <!-- js -->
   <script src="./js/jquery-3.7.1.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.search-input').focus(function(){
-        $('.search-form').removeClass('border-secondary-subtle').addClass('border-primary');
-        $('.search-btn').removeClass('border-secondary-subtle').addClass('border-primary');
-      })
-      $('.search-input').blur(function(){
-        $('.search-form').removeClass('border-primary').addClass('border-secondary-subtle');
-        $('.search-btn').removeClass('border-primary').addClass('border-secondary-subtle');
-      })
-    });
-  </script>
+  <script src="./js/component.js"></script>
 </body>
 </html>
