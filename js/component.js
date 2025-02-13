@@ -8,6 +8,23 @@ $(document).ready(function(){
     $('.search-form').removeClass('border-primary').addClass('border-secondary-subtle');
     $('.search-btn').removeClass('border-primary').addClass('border-secondary-subtle');
   })
+  for (let i = 1; i <= 5; i++) {
+    $('.cat-' + i).hover(
+      function() {
+        $('.cat-' + i + '-list').removeClass('d-none');
+      },
+      function() {
+        $('.cat-' + i + '-list').addClass('d-none');
+      }
+    );
+    $('.cat-' + i + '-list').hover(function(){
+      $('.cat-' + i + '-list').removeClass('d-none');
+    },
+      function() {
+        $('.cat-' + i + '-list').addClass('d-none');
+      }
+    );
+  }
 });
 
 // 首頁論播圖

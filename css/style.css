@@ -141,3 +141,20 @@ body .notify:not(#home .notify) {
 .f-carousel__dots {
   bottom: 1px !important;
 }
+
+/* 首頁商品分類選單 */
+.cat-1-list {
+  left: calc(0px + 15.625rem);
+}
+.cat-2-list {
+  left: calc(0px + 15.625rem);
+}
+.cat-3-list {
+  left: calc(0px + 15.625rem);
+}
+.cat-4-list {
+  left: calc(0px + 15.625rem);
+}
+.cat-5-list {
+  left: calc(0px + 15.625rem);
+}
