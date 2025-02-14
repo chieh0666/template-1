@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>模板一&nbsp;-&nbsp;聯絡我們</title>
+  <title>模板一</title>
   <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -86,59 +86,74 @@
   <!-- main content -->
   <main>
     <div class="container">
-      <!-- contacts us -->
       <div class="text-center">
         <h2 class="py-1875">
-          <span class="border-start border-top ps-2 pt-1 border-3">聯絡我們</span>
+          <span class="border-start border-top ps-2 pt-1 border-3">建立帳戶</span>
         </h2>
       </div>
-      <!-- contact form -->
-      <article class="mt-1875">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 p-2">
-            <form action="#" method="POST">
-              <div class="row g-3">
-                <!-- 姓名 -->
-                <div class="col-md-6">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control border-top-0 border-end-0 rounded-0 border-dark" id="for-name" placeholder="真實姓名" required="">
-                    <label class="text-primary" for="for-name">姓名</label>
-                  </div>
-                </div>
-                <!-- 電話 -->
-                <div class="col-md-6">
-                  <div class="form-floating mb-3">
-                    <input type="tel" class="form-control border-top-0 border-end-0 rounded-0 border-dark" id="for-tel" placeholder="聯絡電話" required="">
-                    <label class="text-primary" for="for-tel">電話</label>
-                  </div>
-                </div>
-                <!-- 信箱 -->
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control border-top-0 border-end-0 rounded-0 border-dark" id="for-email" placeholder="常用信箱" required="">
-                    <label class="text-primary" for="for-email">電子郵件</label>
-                  </div>
-                </div>
-                <!-- 留言 -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control border-top-0 border-end-0 rounded-0 border-dark" placeholder="請在這裡留言" id="for-message"></textarea>
-                    <label class="text-primary" for="for-message">留言</label>
-                  </div>
-                </div>
-                <!-- 按鈕 -->
-                <div class="col-12 text-center mt-3">
-                  <button class="btn btn-danger text-light px-4" type="reset">重填</button>
-                  <button class="btn btn-primary text-light px-4" type="submit">送出</button>
-                </div>
+      <!-- register form -->
+      <div class="mt-1875">
+        <form action="#" method="POST" novalidate>
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-last-name" class="form-label">姓氏</label>
+              <input type="text" class="form-control is-invalid" id="for-last-name" value="" required>
+              <div class="invalid-feedback">
+                不得為空值!
               </div>
-            </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-first-name" class="form-label">名字</label>
+              <input type="text" class="form-control is-invalid" id="for-first-name" value="" required>
+              <div class="invalid-feedback">
+                不得為空值!
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-nickname" class="form-label">暱稱</label>
+              <input type="text" class="form-control is-invalid" id="for-first-name" value="" required>
+              <div class="invalid-feedback">
+                不得為空值!
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-gender" class="form-label d-block">性別</label>
+                <input type="radio" class="btn-check" name="gender" id="primary-outlined" value="M" required>
+                <label class="btn btn-outline-primary" for="primary-outlined">男性</label>
+
+                <input type="radio" class="btn-check" name="gender" id="danger-outlined" value="F" required>
+                <label class="btn btn-outline-danger" for="danger-outlined">女性</label>
+
+                <input type="radio" class="btn-check" name="gender" id="secondary-outlined" value="O" required>
+                <label class="btn btn-outline-secondary" for="secondary-outlined">其他</label>
+            </div>
+            <div class="col-lg-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-account" class="form-label">手機號碼或電子郵件地址</label>
+              <input type="email" class="form-control is-invalid" id="for-account" value="" required>
+              <div class="invalid-feedback">
+                不得為空值!
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-first-name" class="form-label">設定密碼</label>
+              <input type="password" class="form-control is-invalid" id="validationServer01" value="" required>
+              <div class="invalid-feedback">
+                不得為空值!
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
+              <label for="for-first-name" class="form-label">確認密碼</label>
+              <input type="password" class="form-control is-invalid" id="validationServer01" value="" required>
+              <div class="invalid-feedback">
+                不得為空值!
+              </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mt-5"> -->
+              <button class="btn btn-primary col-3 mt-5" type="submit">註冊</button>
+            <!-- </div> -->
           </div>
-          <div class="col-lg-6 col-md-12 p-2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3475575192415!2d120.19807799999998!3d23.0110076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e765a2fc499f7%3A0x774930200ede55d8!2sChungnan!5e0!3m2!1sen!2stw!4v1738554665966!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2"></iframe>
-          </div>
-        </div>
-      </article>
+        </form>
+      </div>
     </div>
   </main>
   <!-- footer -->

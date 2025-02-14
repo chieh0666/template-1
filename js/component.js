@@ -17,7 +17,8 @@ $(document).ready(function(){
         $('.cat-' + i + '-list').addClass('d-none');
       }
     );
-    $('.cat-' + i + '-list').hover(function(){
+    $('.cat-' + i + '-list').hover(
+      function() {
       $('.cat-' + i + '-list').removeClass('d-none');
     },
       function() {
