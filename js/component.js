@@ -4,10 +4,13 @@ $(document).ready(function(){
     $('.search-form').removeClass('border-secondary-subtle').addClass('border-primary');
     $('.search-btn').removeClass('border-secondary-subtle').addClass('border-primary');
   })
+
   $('.search-input').blur(function(){
     $('.search-form').removeClass('border-primary').addClass('border-secondary-subtle');
     $('.search-btn').removeClass('border-primary').addClass('border-secondary-subtle');
   })
+
+  /* 首頁商品分類選單 */
   for (let i = 1; i <= 5; i++) {
     $('.cat-' + i).hover(
       function() {
@@ -25,10 +28,19 @@ $(document).ready(function(){
         $('.cat-' + i + '-list').addClass('d-none');
       }
     );
+    const catLists = document.querySelectorAll('.cat-' + i + '-list');
+    catLists.forEach(list => {
+      list.style.left = 'calc(0px + 15.625rem)';
+      const spans = list.querySelectorAll('span');
+      const lastSpan = spans[spans.length - 1];
+      if (lastSpan) {
+        lastSpan.style.display = 'none';
+      }
+    });
   }
+  
+  // 首頁論播圖
+  const container = document.getElementById("bannerCarousel");
+  const options = { infinite: true, Autoplay: {timeout: 3000} };
+  new Carousel(container, options, { Autoplay });
 });
-
-// 首頁論播圖
-const container = document.getElementById("myCarousel");
-const options = { infinite: true, Autoplay: {timeout: 3000} };
-new Carousel(container, options, { Autoplay });
