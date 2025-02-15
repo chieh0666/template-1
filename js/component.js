@@ -31,6 +31,7 @@ $(document).ready(function(){
     const catLists = document.querySelectorAll('.cat-' + i + '-ls');
     catLists.forEach(list => {
       list.style.left = 'calc(0px + 15.625rem)';
+      list.style.backdropFilter = 'blur(5rem)';
       const spans = list.querySelectorAll('span');
       const lastSpan = spans[spans.length - 1];
       if (lastSpan) {
