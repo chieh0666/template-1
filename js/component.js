@@ -37,6 +37,12 @@ $(document).ready(function(){
         lastSpan.style.display = 'none';
       }
     });
+    $('.cat-' + i + '-ls').each(function() {
+      let spans = $(this).find('span');
+      for (let i = 4; i < spans.length; i += 5) {
+        $(spans[i]).after('<br/>');
+      }
+    });
   }
   
   // 首頁論播圖
