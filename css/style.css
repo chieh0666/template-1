@@ -151,3 +151,8 @@ body .notify:not(#home .notify) {
 .check-out {
   backdrop-filter: blur(5rem);
 }
+
+/* m-menu 選單 */
+#m-menu li:last-of-type {
+  border-bottom: none !important;
+}

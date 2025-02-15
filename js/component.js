@@ -14,21 +14,21 @@ $(document).ready(function(){
   for (let i = 1; i <= 5; i++) {
     $('.cat-' + i).hover(
       function() {
-        $('.cat-' + i + '-list').removeClass('d-none');
+        $('.cat-' + i + '-ls').removeClass('d-none');
       },
       function() {
-        $('.cat-' + i + '-list').addClass('d-none');
+        $('.cat-' + i + '-ls').addClass('d-none');
       }
     );
-    $('.cat-' + i + '-list').hover(
+    $('.cat-' + i + '-ls').hover(
       function() {
-      $('.cat-' + i + '-list').removeClass('d-none');
+      $('.cat-' + i + '-ls').removeClass('d-none');
     },
       function() {
-        $('.cat-' + i + '-list').addClass('d-none');
+        $('.cat-' + i + '-ls').addClass('d-none');
       }
     );
-    const catLists = document.querySelectorAll('.cat-' + i + '-list');
+    const catLists = document.querySelectorAll('.cat-' + i + '-ls');
     catLists.forEach(list => {
       list.style.left = 'calc(0px + 15.625rem)';
       const spans = list.querySelectorAll('span');

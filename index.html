@@ -17,13 +17,18 @@
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
         <!-- logo -->
-        <div class="col-1 m-2">
+        <div class="col-1 m-2 d-lg-block d-none">
           <h1 class="m-0">
             <a href="./index.html" title="回首頁">
               <img src="./images/logo_tab.png" alt="YUJ">
               <span class="d-none">YUJ網頁設計</span>
             </a>
           </h1>
+        </div>
+        <div class="col-1 m-2 d-block d-lg-none">
+          <button class="fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#m-menu" aria-expanded="false" aria-controls="m-menu">
+            <i class="bi bi-list"></i>
+          </button>
         </div>
         <!-- search form -->
         <div class="search-form border border-secondary-subtle rounded-pill w-50 h-auto ps-2 overflow-hidden">
@@ -47,7 +52,7 @@
               <span class="d-none d-md-inline-block">登入</span>
             </a>
           </div>
-          <span class="px-2">|</span>
+          <span class="px-3">|</span>
           <div>
             <a href="./cart-list.html" title="前往我的購物車">
               <i class="bi bi-cart"></i>
@@ -57,7 +62,7 @@
         </div>
       </div>
       <!-- nav -->
-      <nav class="py-1">
+      <nav class="py-1 d-lg-block d-none">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
@@ -79,6 +84,31 @@
           </li>
         </ul>
       </nav>
+      <!-- mobile、tablet menu -->
+      <div class="collapse" id="m-menu">
+        <div class="card card-body border-0">
+          <ul class="nav flex-column text-center align-items-center">
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./new-product.html" title="前往最新商品">最新商品</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./promotion.html" title="前往促銷活動">促銷活動</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./news.html" title="前往最新消息">最新消息</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./about.html" title="前往關於我們">關於我們</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- 廣告或重要事項通知時顯示 -->
     <div class="notify text-center text-danger py-03125 fs-5">
@@ -138,19 +168,19 @@
               <div class="f-carousel__slide"><img src="./images/banner3.jpg" alt="行銷圖"></div>
             </div>
             <div class="text-start">
-              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-1-list">
+              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-1-ls">
                 <a href="#">12345</a><span class="px-1">/</span><a href="#">645456</a><span class="px-1">/</span><a href="#">56465464</a><span class="px-1">/</span><a href="#">86486</a><span class="px-1">/</span><a href="#">4684</a><span class="px-1">/</span>
               </div>
-              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-2-list">
+              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-2-ls">
                 <a href="#">12345gfdgfd</a><span class="px-1">/</span><a href="#">645456</a><span class="px-1">/</span><a href="#">56465464</a><span class="px-1">/</span><a href="#">86486</a><span class="px-1">/</span><a href="#">4684</a><span class="px-1">/</span>
               </div>
-              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-3-list">
+              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-3-ls">
                 <a href="#">12345gfdg</a><span class="px-1">/</span><a href="#">645456</a><span class="px-1">/</span><a href="#">56465464</a><span class="px-1">/</span><a href="#">86486</a><span class="px-1">/</span><a href="#">4684</a><span class="px-1">/</span>
               </div>
-              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-4-list">
+              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-4-ls">
                 <a href="#">12345fgfrrr</a><span class="px-1">/</span><a href="#">645456</a><span class="px-1">/</span><a href="#">56465464</a><span class="px-1">/</span><a href="#">86486</a><span class="px-1">/</span><a href="#">4684</a><span class="px-1">/</span>
               </div>
-              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-5-list">
+              <div  class="bg-white position-absolute top-0 bottom-0 left-0 shadow p-4 z-1 d-none cat-5-ls">
                 <a href="#">1234grfgfg5</a><span class="px-1">/</span><a href="#">645456</a><span class="px-1">/</span><a href="#">56465464</a><span class="px-1">/</span><a href="#">86486</a><span class="px-1">/</span><a href="#">4684</a><span class="px-1">/</span>
               </div>
             </div>
@@ -701,6 +731,7 @@
   </footer>
   <!-- js -->
   <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
   <script src="./js/ui-main/dist/carousel/carousel.umd.js"></script>
   <script src="./js/ui-main/dist/carousel/carousel.autoplay.umd.js"></script>
   <script src="./js/component.js"></script>
