@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模板一&nbsp;-&nbsp;最新商品</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="mb-03125">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center">
+        <!-- mobile logo -->
+        <div class="col-1 d-block d-lg-none my-2">
+          <h1 class="m-0">
+            <a href="./index.html" title="回首頁">
+              <img src="./images/logo_tab.png" alt="YUJ">
+              <span class="d-none">YUJ網頁設計</span>
+            </a>
+          </h1>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="col-1 d-lg-block d-none m-2">
+          <h1 class="m-0">
+            <a href="./index.html" title="回首頁">
+              <img src="./images/logo_tab.png" alt="YUJ">
+              <span class="d-none">YUJ網頁設計</span>
+            </a>
+          </h1>
+        </div>
+        <!-- mobile menu button -->
+        <div class="col-1 mx-1 d-block d-lg-none">
+          <button class="fs-1 btn" type="button" data-bs-toggle="collapse" data-bs-target="#m-menu" aria-expanded="false" aria-controls="m-menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+        <!-- search form -->
+        <div class="search-form border border-secondary-subtle rounded-pill w-50 h-auto ps-2 overflow-hidden">
+          <form action="#" method="get">
+            <div class="d-flex align-items-center justify-content-between">
+              <label for="for-search">
+                <span class="d-none">搜尋</span>
+              </label>
+              <input type="search" class="w-100 p-2 search-input" name="" id="" placeholder="搜尋" title="請輸入關鍵字">
+              <button class="search-btn bg-light border-start border-secondary-subtle py-2 px-3" type="submit" title="搜尋按鈕">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- user、cart button -->
+        <div class="d-flex me-2 px-2 align-items-center justify-content-center fs-4">
+          <div>
+            <a href="./login-page.html" title="前往會員登入">
+              <i class="bi bi-person-circle"></i>
+              <span class="d-none d-md-inline-block">登入</span>
+            </a>
+          </div>
+          <span class="mx-3">|</span>
+          <div>
+            <a class="position-relative" href="./cart-list.html" title="前往我的購物車">
+              <i class="bi bi-cart fs-2"></i>
+              <span class="position-absolute top-0 start-100 translate-middle rounded-pill badge bg-danger mt-2 p-1">
+                99+
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- nav -->
+      <nav class="py-1 d-lg-block d-none">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./new-product.html" title="前往最新商品">最新商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./promotion.html" title="前往促銷活動">促銷活動</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html" title="前往最新消息">最新消息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html" title="前往關於我們">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile、tablet menu -->
+      <div class="collapse" id="m-menu">
+        <div class="card card-body border-0">
+          <ul class="nav flex-column text-center align-items-center">
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./new-product.html" title="前往最新商品">最新商品</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./promotion.html" title="前往促銷活動">促銷活動</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./news.html" title="前往最新消息">最新消息</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./about.html" title="前往關於我們">關於我們</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 廣告或重要事項通知時顯示 -->
+    <div class="notify text-center text-danger py-03125 fs-5">
+      <span>公告訊息</span>
+    </div>
+  </header>
+  <!-- main content -->
+  <main>
+    <div class="container">
+      <!-- product detail -->
+    <article id="product-detail-page" class="py-1875">
+      <nav aria-label="breadcrumb" class="p-125">
+        <ol class="breadcrumb text-916953">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <!-- 內容 -->
+      <div class="px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6">
+            <img class="card-img-top mb-5 mb-md-0" src="./images/product2.jpg" alt="商品圖" /> <!-- 600*700 -->
+          </div>
+          <div class="col-md-6">
+            <div class="small mb-1">SKU: BST-498</div>
+            <h1 class="display-5 fw-bolder">華碩Vivobook 15</h1>
+            <div class="fs-5 mb-5">
+              <span class="text-decoration-line-through">$45.00</span>
+              <span>$40.00</span>
+            </div>
+            <p class="lead">特色：IPS面板 特色：Type-C可支援影像傳輸及DC-in 處理器：AMD Ryzen 7 5700U 液晶尺寸/記憶體：15.6吋 IPS/霧面/LED背光/8GB DDR4/2/MAX 32GB 硬碟容量/光碟機：512GB PCIe Gen4 SSD / NA 顯示卡：AMD Radeon Graphics 重量/保固：1.78 kg/台灣2年 作業系統：Windows 11 Home</p>
+            <form action="#" method="POST">
+              <div class="row g-3">
+                <div class="col-md-5 col-lg-4">
+                  <label class="form-label fw-bolder">規格</label>
+                  <select class="form-select border-0 border-bottom rounded-0 border-secondary-subtle bg-transparent" aria-label="select-list">
+                    <option disabled selected>請選擇</option>
+                    <option value="1">A1</option>
+                    <option value="2">A2</option>
+                    <option value="3">A3</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <label class="form-label fw-bolder">數量</label>
+                  <select class="form-select border-0 border-bottom rounded-0 border-secondary-subtle bg-transparent" aria-label="select-list">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                  </select>
+                </div>
+                <div class="row g-3">
+                  <button class="btn btn-success text-light col-md-5 col-lg-4 m-2" type="button">
+                    <i class="bi bi-plus-lg"></i><i class="bi-cart me-1"></i>
+                    加入購物車
+                  </button>
+                  <button class="btn btn-primary text-light col-md-5 col-lg-4 m-2" type="button">
+                    <i class="bi bi-bag"></i>
+                    立即購買
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="mt-625">
+    <div class="container">
+      <div class="footer-top border-top border-bottom border-secondary-subtle p-125">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <!-- logo -->
+            <div class="text-center">
+              <a class="col-3" href="./index.html">
+                <img src="./images/logo_tab.png" alt="YUJ網頁設計">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="h5 text-center mb-3">連結</h3>
+            <ul class="text-center row row-cols-2 row-cols-md-1 g-1 ps-0">
+              <li>
+                <a href="./products.html" title="前往所有商品">所有商品</a>
+              </li>
+              <li>
+                <a href="./new-product.html" title="前往最新商品">最新商品</a>
+              </li>
+              <li>
+                <a href="./promotion.html" title="前往促銷活動">促銷活動</a>
+              </li>
+              <li>
+                <a href="./news.html" title="前往最新消息">最新消息</a>
+              </li>
+              <li>
+                <a href="./about.html" title="前往關於我們">關於我們</a>
+              </li>
+              <li>
+                <a href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="h5 mb-3">聯絡資訊</h3>
+            <ul class="ps-0">
+              <li>
+                客服專線：<a href="tel:0912-345-678" title="專線：0912-345-678">0912-345-678</a>
+              </li>
+              <li>
+                電子信箱：<a href="mailto:service@abc.com" title="聯絡信箱：service@abc.com">service@abc.com</a>
+              </li>
+              <li>
+                地　　址：<a href="https://maps.app.goo.gl/BA4F2sMTMd6a8Hjg9" title="前往Google map[另開視窗]" target="_blank">台南市北區和緯路三段220號</a>
+              </li>
+              <li>
+                營業時間：週二 ~ 週日 11:00 - 21:00
+              </li>
+              <li>
+                店休時間：週一
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom my-0625 text-center">
+        <small>&copy;2025 YUJ 網頁設計</small>
+      </div>
+    </div>
+  </footer>
+  <!-- js -->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/component.js"></script>
+</body>
+</html>
