@@ -241,3 +241,8 @@ body .notify:not(#home .notify) {
   color:rgb(103, 114, 182);
   text-decoration: none;
 }
+
+.is-current .f-carousel__dot {
+  padding-left: 8px;
+  padding-right: 8px;
+}

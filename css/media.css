@@ -11,7 +11,7 @@
     width: calc(100% / 2);
   }
   #product-sales .f-carousel__slide {
-    width: calc(100% / 4);
+    width: calc(100% / 2);
   }
   /* news頁面響應式布局 */
   #news-page .flex-w-25 {
@@ -72,6 +72,14 @@
   /* 促銷頁面商品輪播圖 */
   #product-sales .f-carousel__slide {
     width: calc(100% / 2);
+  }
+  
+  #product-sales .f-carousel__nav {
+    display: none;
+  }
+
+  #promotion .f-carousel__nav {
+    display: none;
   }
 }
 
