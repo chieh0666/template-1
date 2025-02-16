@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模板一</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body id="home">
+  <!-- header -->
+  <header class="mb-03125">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="col-1 m-2">
+          <h1 class="m-0">
+            <a href="./index.html" title="回首頁">
+              <img src="./images/logo_tab.png" alt="YUJ">
+              <span class="d-none">YUJ網頁設計</span>
+            </a>
+          </h1>
+        </div>
+        <!-- search form -->
+        <div class="search-form border border-secondary-subtle rounded-pill w-50 h-auto ps-2 overflow-hidden">
+          <form action="#" method="get">
+            <div class="d-flex align-items-center justify-content-between">
+              <label for="for-search">
+                <span class="d-none">搜尋</span>
+              </label>
+              <input type="search" class="w-100 p-2" name="" id="" placeholder="搜尋" title="請輸入關鍵字">
+              <button class="search-btn bg-light border-start border-secondary-subtle py-2 px-3" type="submit"
+                title="搜尋按鈕">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- user、cart button -->
+        <div class="d-flex fs-5 p-1">
+          <div>
+            <a href="#" title="前往會員登入">
+              <i class="bi bi-person-circle"></i>
+              <span class="d-none d-md-inline-block">登入</span>
+            </a>
+          </div>
+          <span class="px-2">|</span>
+          <div>
+            <a href="#" title="前往我的購物車">
+              <i class="bi bi-cart"></i>
+              <span>99+</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- nav -->
+      <nav class="py-1">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./new-product.html" title="前往最新商品">最新商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./promotion.html" title="前往促銷活動">促銷活動</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html" title="前往最新消息">最新消息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html" title="前往關於我們">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 廣告或重要事項通知時顯示 -->
+    <div class="text-center text-danger border border-danger py-03125 fs-4">
+      <span>促銷商品</span>
+    </div>
+  </header>
+  <!-- main content -->
+  <main>
+    <article>
+      <!-- 輪播圖1 -->
+
+
+      <div id="owl" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/9.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="item">
+          <img src="images/10.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="item">
+          <img src="images/11.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+
+
+    </article>
+    <article>
+      <div class="container">
+        <div class="text-center section-title mb-7">
+          <h2 class="fw-bolder fs-1">促銷商品</h2>
+          <div id="owl-2" class="owl-carousel owl-theme">
+            <!-- 卡1卡1 -->
+          <div class="card">
+            <img src="images/14.jpg" class="card-img-top" alt="促銷商品圖">
+            <div class="card-body">
+              <h5 class="card-title">二手phone二手phone</h5>
+              <a href="#">
+              <p class="card-text">超值入手！二手 iPhone 12 等你帶回家！ 📱
+                想要高性能手機但又不想花大錢？🚀 現在入手 二手 iPhone 12，超值優惠等你來搶！詳情請點閱</a></div>
+            <div class="card-footer">
+              <small class="text-muted">刊登時間:2024-11-11</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/15.jpg" class="card-img-top" alt="促銷商品圖1">
+            <div class="card-body">
+              <h5 class="card-title ">八成新上衣</h5>
+              <a href="#">
+              <p class="card-text">還在找CP值超高的時尚單品嗎？🌟 精選二手上衣，價格親民、風格百搭，讓你用小資價格穿出大牌感！詳情請點閱</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">刊登時間:2024-10-11</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/16.jpg" class="card-img-top" alt="促銷商品圖2">
+            <div class="card-body">
+              <h5 class="card-title">二手家具椅子，舒適品質再升級</h5>
+              <a href="#">
+              <p class="card-text">正在找一張高CP值的椅子嗎？💡 精選二手椅子，價格超甜、品質依舊，為你的空間增添溫度與風格！詳情請點閱</a></div>
+            <div class="card-footer">
+              <small class="text-muted">刊登時間:2024-9-11</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/17.jpg" class="card-img-top" alt="促銷商品圖3">
+            <div class="card-body">
+              <h5 class="card-title">switch</h5>
+              <a href="#">
+              <p class="card-text">功能正常，使用流暢，遊戲體驗滿分！<br>
+                ✅ 價格划算，比新品更省錢！<br>
+                ✅ 多款主機 & 配件可選，立即開玩！詳情請點閱<br></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">刊登時間:2024-8-11</small>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </article>
+  </main>
+  <!-- footer -->
+  <footer class="mt-625">
+    <div class="container">
+      <div class="footer-top border-top border-bottom border-secondary-subtle p-125">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <!-- logo -->
+            <div class="text-center">
+              <a class="col-3" href="./index.html">
+                <img src="./images/logo_tab.png" alt="YUJ網頁設計">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="h5 text-center"><span class="border-start border-top ps-2 pt-1 border-3">連結</span></h3>
+            <ul class="text-center row row-cols-2 row-cols-md-1 g-1 ps-0">
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./products.html" title="前往所有商品">所有商品</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./new-product.html" title="前往最新商品">最新商品</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./promotion.html" title="前往促銷活動">促銷活動</a>
+                </span>
+              </li>
+              <li><span class="border-start border-3 ps-2">
+                  <a href="./news.html" title="前往最新消息">最新消息</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./about.html" title="前往關於我們">關於我們</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  <a href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="h5 text-center"><span class="border-start border-top ps-2 pt-1 border-3">聯絡資訊</span></h3>
+            <ul class="ps-0">
+              <li>
+                <span class="border-start border-3 ps-2">客服專線：
+                  <a href="tel:0912-345-678" title="專線：0912-345-678">0912-345-678</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">電子信箱：
+                  <a href="mailto:service@abc.com" title="聯絡信箱：service@abc.com">service@abc.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">地　　址：
+                  <a href="https://maps.app.goo.gl/BA4F2sMTMd6a8Hjg9" title="前往Google map[另開視窗]"
+                    target="_blank">台南市北區和緯路三段220號</a>
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  營業時間：週二 ~ 週日 11:00 - 21:00
+                </span>
+              </li>
+              <li>
+                <span class="border-start border-3 ps-2">
+                  店休時間：週一
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom my-0625 text-center">
+        <small>&copy;2025 YUJ 網頁設計</small>
+      </div>
+    </div>
+  </footer>
+  <!-- js -->
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script>
+    $('#owl').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,     
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        }
+       
+      }
+    })
+  </script>
+  <script>
+    $('#owl-2').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 3
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
