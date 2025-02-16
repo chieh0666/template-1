@@ -74,11 +74,7 @@
     width: calc(100% / 2);
   }
   
-  #product-sales .f-carousel__nav {
-    display: none;
-  }
-
-  #promotion .f-carousel__nav {
+  .f-carousel__nav {
     display: none;
   }
 }
