@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>模板一</title>
   <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
-
 </head>
-
-<body id="home">
+<body>
   <!-- header -->
   <header class="mb-03125">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <!-- logo -->
-        <div class="col-1 m-2">
+      <div class="d-flex align-items-center justify-content-center">
+        <!-- mobile logo -->
+        <div class="col-1 d-block d-lg-none my-2">
           <h1 class="m-0">
             <a href="./index.html" title="回首頁">
               <img src="./images/logo_tab.png" alt="YUJ">
               <span class="d-none">YUJ網頁設計</span>
             </a>
           </h1>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- logo -->
+        <div class="col-1 d-lg-block d-none m-2">
+          <h1 class="m-0">
+            <a href="./index.html" title="回首頁">
+              <img src="./images/logo_tab.png" alt="YUJ">
+              <span class="d-none">YUJ網頁設計</span>
+            </a>
+          </h1>
+        </div>
+        <!-- mobile menu button -->
+        <div class="col-1 mx-1 d-block d-lg-none">
+          <button class="fs-1 btn" type="button" data-bs-toggle="collapse" data-bs-target="#m-menu" aria-expanded="false" aria-controls="m-menu">
+            <i class="bi bi-list"></i>
+          </button>
         </div>
         <!-- search form -->
         <div class="search-form border border-secondary-subtle rounded-pill w-50 h-auto ps-2 overflow-hidden">
@@ -35,33 +47,34 @@
               <label for="for-search">
                 <span class="d-none">搜尋</span>
               </label>
-              <input type="search" class="w-100 p-2" name="" id="" placeholder="搜尋" title="請輸入關鍵字">
-              <button class="search-btn bg-light border-start border-secondary-subtle py-2 px-3" type="submit"
-                title="搜尋按鈕">
+              <input type="search" class="w-100 p-2 search-input" name="" id="" placeholder="搜尋" title="請輸入關鍵字">
+              <button class="search-btn bg-light border-start border-secondary-subtle py-2 px-3" type="submit" title="搜尋按鈕">
                 <i class="bi bi-search"></i>
               </button>
             </div>
           </form>
         </div>
         <!-- user、cart button -->
-        <div class="d-flex fs-5 p-1">
+        <div class="d-flex me-2 px-2 align-items-center justify-content-center fs-4">
           <div>
-            <a href="#" title="前往會員登入">
+            <a href="./login-page.html" title="前往會員登入">
               <i class="bi bi-person-circle"></i>
               <span class="d-none d-md-inline-block">登入</span>
             </a>
           </div>
-          <span class="px-2">|</span>
+          <span class="mx-3">|</span>
           <div>
-            <a href="#" title="前往我的購物車">
-              <i class="bi bi-cart"></i>
-              <span>99+</span>
+            <a class="position-relative" href="./cart-list.html" title="前往我的購物車">
+              <i class="bi bi-cart fs-2"></i>
+              <span class="position-absolute top-0 start-100 translate-middle rounded-pill badge bg-danger mt-2 p-1">
+                99+
+              </span>
             </a>
           </div>
         </div>
       </div>
       <!-- nav -->
-      <nav class="py-1">
+      <nav class="py-1 d-lg-block d-none">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
@@ -83,18 +96,47 @@
           </li>
         </ul>
       </nav>
+      <!-- mobile、tablet menu -->
+      <div class="collapse" id="m-menu">
+        <div class="card card-body border-0">
+          <ul class="nav flex-column text-center align-items-center">
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./products.html" title="前往所有商品">所有商品</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./new-product.html" title="前往最新商品">最新商品</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./promotion.html" title="前往促銷活動">促銷活動</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./news.html" title="前往最新消息">最新消息</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./about.html" title="前往關於我們">關於我們</a>
+            </li>
+            <li class="nav-item w-50 border-bottom border-2 rounded-start rounded-end">
+              <a class="nav-link" href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- 廣告或重要事項通知時顯示 -->
-    <div class="text-center text-danger border border-danger py-03125 fs-4">
-      <span>促銷商品</span>
+    <div class="notify text-center text-danger py-03125 fs-5">
+      <span>公告訊息</span>
     </div>
   </header>
   <!-- main content -->
   <main>
-    <div class="text-center my-3 display-6 fw-bold">最新消息</div>
-    <div class="container g-4">
-      <div class="row d-flex flex-wrap g-4  ">
-        
+    <div class="container">
+      <div class="text-center">
+        <h2 class="py-1875">
+          <span class="border-start border-top ps-2 pt-1 border-3">最新消息</span>
+        </h2>
+      </div>
+      <article id="news-page" class="news-box g-4">
+        <div class="row d-flex flex-wrap g-4">
           <div class="card flex-w-25">
             <img src="images/1.jpg" class="card-img-top" alt="最新消息圖片1">
             <div class="card-body">
@@ -108,138 +150,122 @@
               <small class="text-body-secondary">發布時間:2025-02-11</small>
             </div>
           </div>
-        
-        
-        <div class="card flex-w-25">
-          <img src="images/2.jpg" class="card-img-top" alt="最新消息圖片2">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">🔥 1111購物狂歡節，全年最低折扣來襲！🔥</h5>
-            <a href="#">💥 11.11 只給你最狂優惠 💥<br>
-              🎯 全館滿$1111折$111<br>
-              🎯 指定商品 5 折起<br>
-              🎯 11 元秒殺商品限量搶購<br>
-              🎯 VIP 會員專屬雙倍點數回饋</a>
+          <div class="card flex-w-25">
+            <img src="images/2.jpg" class="card-img-top" alt="最新消息圖片2">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">🔥 1111購物狂歡節，全年最低折扣來襲！🔥</h5>
+              <a href="#">💥 11.11 只給你最狂優惠 💥<br>
+                🎯 全館滿$1111折$111<br>
+                🎯 指定商品 5 折起<br>
+                🎯 11 元秒殺商品限量搶購<br>
+                🎯 VIP 會員專屬雙倍點數回饋</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2024-10-11</small>
+            </div>
           </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2024-10-11</small>
+          <div class="card flex-w-25">
+            <img src="images/3.png" class="card-img-top" alt="最新消息圖片3">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">全新登場！驚喜上市</h5>
+              <a href="#">🚀 全新商品震撼登場，給你前所未有的體驗！ 🚀
+
+                ✨ 新品亮點 ✨
+                ✅ 最新設計，時尚美觀
+                ✅ 高品質選材，使用更安心
+                ✅ 功能升級，帶來更極致的享受
+
+                💡 搶先入手，體驗不一樣的全新感受！
+
+                📍 數量有限，快來選購！
+
+                #全新上市 #新品首發 #不容錯過 #升級體驗</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2024-9-11</small>
+            </div>
           </div>
-        </div> 
-      
-      
-        <div class="card flex-w-25">
-          <img src="images/3.png" class="card-img-top" alt="最新消息圖片3">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">全新登場！驚喜上市</h5>
-            <a href="#">🚀 全新商品震撼登場，給你前所未有的體驗！ 🚀
+          <div class="card flex-w-25">
+            <img src="images/4.jpg" class="card-img-top" alt="最新消息圖片4">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">🎉 雙12狂歡購物節，年度壓軸鉅惠來襲！ 🎉</h5>
+              <a href="#">🛒 全年最低，買到賺到！<br>
+                🔥 限時折扣，全場瘋狂特價
+                🎁 滿額好禮，驚喜不間斷
+                🚛 超值免運，買越多省越多<br>
 
-              ✨ 新品亮點 ✨
-              ✅ 最新設計，時尚美觀
-              ✅ 高品質選材，使用更安心
-              ✅ 功能升級，帶來更極致的享受
+                📅 12.12 只限一天！ 手刀搶購，錯過等明年！
 
-              💡 搶先入手，體驗不一樣的全新感受！
+                🔗 立即選購 👉 [你的購物連結]
 
-              📍 數量有限，快來選購！
-
-              #全新上市 #新品首發 #不容錯過 #升級體驗</a>
+                #雙12購物節 #年終盛典 #瘋狂優惠 #最後一波 #買到賺到</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2025-08-11</small>
+            </div>
           </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2024-9-11</small>
+          <div class="card flex-w-25">
+            <img src="images/5.jpg" class="card-img-top" alt="最新消息圖片5">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">🎉 全館 8 折，全民嗨購！ 🎉</h5>
+              <a href="#">
+                🛍️ 限時狂歡，全館全面 8 折！<br>
+                🔥 爆款直降，最低價瘋搶！<br>
+                🎁 超值優惠，折扣直接送！<br>
+                🚛 滿額免運，再享購物好禮！
+                <br>
+                📅 限時優惠，錯過等明年！<br>
+                🔗 立即搶購 👉 [你的購物連結]<br>
+
+                #全館八折 #限時優惠 #買越多省越多 #瘋狂折扣</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2025-07-11</small>
+            </div>
+          </div>
+          <div class="card flex-w-25">
+            <img src="images/6.jpg" class="card-img-top" alt="最新消息圖片6">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">🎁 交換禮物選好了嗎？ 🎁</h5>
+              <a href="#">還在煩惱交換禮物該買什麼？別擔心！我們為你準備了一系列 有趣、實用、驚喜滿分 的禮物，無論是 300 元驚喜包，還是 1000 元高級好禮，這裡通通有！✨</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2025-06-11</small>
+            </div>
+          </div>
+          <div class="card flex-w-25">
+            <img src="images/7.jpg" class="card-img-top" alt="最新消息圖片7">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">🎉 周年慶狂歡，全館優惠嗨翻天！ 🎉</h5>
+              <a href="#">感謝一路相伴，我們迎來了【X週年】🎂 這次要用 最震撼的優惠，回饋給所有支持我們的你！❤️<br>
+
+                🔥 限時好康，錯過再等一年！ 🔥<br>
+                ✨ 全館最低XX折，超值回饋<br>
+                🎁 滿額再送限量好禮<br>
+                💥 超殺限時優惠，每日驚喜不重樣！<br>
+
+                📅 活動時間：XX/XX - XX/XX
+                趕快加入我們，一起歡慶這個特別的日子！🎊 👉 [你的購物連結]
+
+                #周年慶 #限時優惠 #感謝有你 #超值回饋</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2025-05-11</small>
+            </div>
+          </div>
+          <div class="card flex-w-25">
+            <img src="images/8.jpg" class="card-img-top" alt="最新消息圖片8">
+            <div class="card-body">
+              <h5 class="card-title font fw-bold">🔧 系統維護公告 🔧</h5>
+              <a href="#">為了提供更穩定與流暢的服務，我們將進行系統維護作業。維護期間，部分功能可能受到影響，請您提前安排相關使用時間。</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">發布時間:2025-04-11</small>
+            </div>
           </div>
         </div>
-      
-        
-        <div class="card flex-w-25">
-          <img src="images/4.jpg" class="card-img-top" alt="最新消息圖片4">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">🎉 雙12狂歡購物節，年度壓軸鉅惠來襲！ 🎉</h5>
-            <a href="#">🛒 全年最低，買到賺到！<br>
-              🔥 限時折扣，全場瘋狂特價
-              🎁 滿額好禮，驚喜不間斷
-              🚛 超值免運，買越多省越多<br>
-
-              📅 12.12 只限一天！ 手刀搶購，錯過等明年！
-
-              🔗 立即選購 👉 [你的購物連結]
-
-              #雙12購物節 #年終盛典 #瘋狂優惠 #最後一波 #買到賺到</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2025-08-11</small>
-          </div>
-        </div>
-      
-        
-        <div class="card flex-w-25">
-          <img src="images/5.jpg" class="card-img-top" alt="最新消息圖片5">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">🎉 全館 8 折，全民嗨購！ 🎉</h5>
-            <a href="#">
-              🛍️ 限時狂歡，全館全面 8 折！<br>
-              🔥 爆款直降，最低價瘋搶！<br>
-              🎁 超值優惠，折扣直接送！<br>
-              🚛 滿額免運，再享購物好禮！
-              <br>
-              📅 限時優惠，錯過等明年！<br>
-              🔗 立即搶購 👉 [你的購物連結]<br>
-
-              #全館八折 #限時優惠 #買越多省越多 #瘋狂折扣</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2025-07-11</small>
-          </div>
-        </div>
-      
-        
-        <div class="card flex-w-25">
-          <img src="images/6.jpg" class="card-img-top" alt="最新消息圖片6">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">🎁 交換禮物選好了嗎？ 🎁</h5>
-            <a href="#">還在煩惱交換禮物該買什麼？別擔心！我們為你準備了一系列 有趣、實用、驚喜滿分 的禮物，無論是 300 元驚喜包，還是 1000 元高級好禮，這裡通通有！✨</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2025-06-11</small>
-          </div>
-        </div>
-      
-        
-        <div class="card flex-w-25">
-          <img src="images/7.jpg" class="card-img-top" alt="最新消息圖片7">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">🎉 周年慶狂歡，全館優惠嗨翻天！ 🎉</h5>
-            <a href="#">感謝一路相伴，我們迎來了【X週年】🎂 這次要用 最震撼的優惠，回饋給所有支持我們的你！❤️<br>
-
-              🔥 限時好康，錯過再等一年！ 🔥<br>
-              ✨ 全館最低XX折，超值回饋<br>
-              🎁 滿額再送限量好禮<br>
-              💥 超殺限時優惠，每日驚喜不重樣！<br>
-
-              📅 活動時間：XX/XX - XX/XX
-              趕快加入我們，一起歡慶這個特別的日子！🎊 👉 [你的購物連結]
-
-              #周年慶 #限時優惠 #感謝有你 #超值回饋</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2025-05-11</small>
-          </div>
-        </div>
-      
-        
-        <div class="card flex-w-25">
-          <img src="images/8.jpg" class="card-img-top" alt="最新消息圖片8">
-          <div class="card-body">
-            <h5 class="card-title font fw-bold">🔧 系統維護公告 🔧</h5>
-            <a href="#">為了提供更穩定與流暢的服務，我們將進行系統維護作業。維護期間，部分功能可能受到影響，請您提前安排相關使用時間。</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">發布時間:2025-04-11</small>
-          </div>
-        </div>
-      
-
-      </div>
+      </article>
     </div>
-    
   </main>
   <!-- footer -->
   <footer class="mt-625">
@@ -255,67 +281,45 @@
             </div>
           </div>
           <div class="col">
-            <h3 class="h5 text-center"><span class="border-start border-top ps-2 pt-1 border-3">連結</span></h3>
+            <h3 class="h5 text-center mb-3">連結</h3>
             <ul class="text-center row row-cols-2 row-cols-md-1 g-1 ps-0">
               <li>
-                <span class="border-start border-3 ps-2">
-                  <a href="./products.html" title="前往所有商品">所有商品</a>
-                </span>
+                <a href="./products.html" title="前往所有商品">所有商品</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">
-                  <a href="./new-product.html" title="前往最新商品">最新商品</a>
-                </span>
+                <a href="./new-product.html" title="前往最新商品">最新商品</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">
-                  <a href="./promotion.html" title="前往促銷活動">促銷活動</a>
-                </span>
-              </li>
-              <li><span class="border-start border-3 ps-2">
-                  <a href="./news.html" title="前往最新消息">最新消息</a>
-                </span>
+                <a href="./promotion.html" title="前往促銷活動">促銷活動</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">
-                  <a href="./about.html" title="前往關於我們">關於我們</a>
-                </span>
+                <a href="./news.html" title="前往最新消息">最新消息</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">
-                  <a href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
-                </span>
+                <a href="./about.html" title="前往關於我們">關於我們</a>
+              </li>
+              <li>
+                <a href="./contact-us.html" title="前往聯絡我們">聯絡我們</a>
               </li>
             </ul>
           </div>
           <div class="col">
-            <h3 class="h5 text-center"><span class="border-start border-top ps-2 pt-1 border-3">聯絡資訊</span></h3>
+            <h3 class="h5 mb-3">聯絡資訊</h3>
             <ul class="ps-0">
               <li>
-                <span class="border-start border-3 ps-2">客服專線：
-                  <a href="tel:0912-345-678" title="專線：0912-345-678">0912-345-678</a>
-                </span>
+                客服專線：<a href="tel:0912-345-678" title="專線：0912-345-678">0912-345-678</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">電子信箱：
-                  <a href="mailto:service@abc.com" title="聯絡信箱：service@abc.com">service@abc.com</a>
-                </span>
+                電子信箱：<a href="mailto:service@abc.com" title="聯絡信箱：service@abc.com">service@abc.com</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">地址：
-                  <a href="https://maps.app.goo.gl/BA4F2sMTMd6a8Hjg9" title="前往Google map[另開視窗]"
-                    target="_blank">台南市北區和緯路三段220號</a>
-                </span>
+                地　　址：<a href="https://maps.app.goo.gl/BA4F2sMTMd6a8Hjg9" title="前往Google map[另開視窗]" target="_blank">台南市北區和緯路三段220號</a>
               </li>
               <li>
-                <span class="border-start border-3 ps-2">
-                  營業時間：週二 ~ 週日 11:00 - 21:00
-                </span>
+                營業時間：週二 ~ 週日 11:00 - 21:00
               </li>
               <li>
-                <span class="border-start border-3 ps-2">
-                  店休時間：週一
-                </span>
+                店休時間：週一
               </li>
             </ul>
           </div>
@@ -327,8 +331,8 @@
     </div>
   </footer>
   <!-- js -->
-  <script src="js/jquery-3.7.1.js"></script>
-  <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/component.js"></script>
 </body>
-
 </html>

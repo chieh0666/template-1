@@ -1,3 +1,10 @@
+/* news頁面響應式布局 */
+#news-page .flex-w-25 {
+  flex: 0 0 calc(100% - 1rem);  /* 一列一個卡片 */
+  width: calc(100% - 1rem);
+  margin: 0.5rem;
+}
+
 @media (min-width: 768px) {
   /* 促銷頁面輪播圖 */
   #promotion .f-carousel__slide {
@@ -5,6 +12,11 @@
   }
   #product-sales .f-carousel__slide {
     width: calc(100% / 4);
+  }
+  /* news頁面響應式布局 */
+  #news-page .flex-w-25 {
+    flex: 0 0 calc(50% - 1rem);  /* 一列兩個卡片 */
+    width: calc(50% - 1rem);
   }
 }
 
@@ -60,5 +72,13 @@
   /* 促銷頁面商品輪播圖 */
   #product-sales .f-carousel__slide {
     width: calc(100% / 2);
+  }
+}
+
+@media(min-width: 1200px) {
+  /* news頁面響應式布局 */
+  #news-page .flex-w-25 {
+    flex: 0 0 calc(25% - 1rem);  /* 一列四個卡片 */
+    width: calc(25% - 1rem);
   }
 }
