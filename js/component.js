@@ -1,4 +1,4 @@
-// 網頁預載入js
+// 首頁預載入js
 $(document).ready(function(){
   $('.search-input').focus(function(){
     $('.search-form').removeClass('border-secondary-subtle').addClass('border-primary');
@@ -46,8 +46,21 @@ $(document).ready(function(){
     });
   }
   
-  // 首頁論播圖
-  const container = document.getElementById("bannerCarousel");
-  const options = { infinite: true, Autoplay: {timeout: 3000} };
+  // 首頁banner、促銷頁面輪播圖
+  const container = document.getElementById("mainCarousel");
+  const options = {
+    infinite: true,
+    Autoplay: {
+      timeout: 3000,
+    showProgress: false
+    }
+  };
   new Carousel(container, options, { Autoplay });
+
 });
+
+const container = document.getElementById("salesCarousel");
+const options = {
+  infinite: false
+};
+new Carousel(container, options);

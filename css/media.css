@@ -1,3 +1,13 @@
+@media (min-width: 768px) {
+  /* 促銷頁面輪播圖 */
+  #promotion .f-carousel__slide {
+    width: calc(100% / 2);
+  }
+  #product-sales .f-carousel__slide {
+    width: calc(100% / 4);
+  }
+}
+
 @media (max-width:991px) {
   #cart-list-form thead {
     display: none;
@@ -45,5 +55,10 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  /* 促銷頁面商品輪播圖 */
+  #product-sales .f-carousel__slide {
+    width: calc(100% / 2);
   }
 }

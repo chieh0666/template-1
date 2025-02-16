@@ -133,7 +133,7 @@ body .notify:not(#home .notify) {
   height: 150px;
 }
 
-/* 輪播圖 */
+/* 首頁banner輪播圖 */
 .f-carousel {
   margin-bottom: 0 !important;
   position: relative;
@@ -155,4 +155,41 @@ body .notify:not(#home .notify) {
 /* m-menu 選單 */
 #m-menu li:last-of-type {
   border-bottom: none !important;
+}
+
+/* 促銷頁輪播圖 */
+#promotion .f-carousel__slide {
+  width: 100%;
+}
+/* #promotion .f-carousel {
+  --f-carousel-spacing: 8px;
+  --f-carousel-slide-width: calc((100% - 16px) / 2);
+} */
+#product-sales .card {
+  height: 500px; /* 卡片高度 因為內容長短會改變卡片高度 導致卡片高度不一 */
+  margin: 10px;
+}
+#product-sales .card-img-top {
+  height: 250px; /* 固定圖片高度 */
+  object-fit: contain;
+  padding: 10px;
+  background: #f8f9fa;
+}
+#product-sales .card-body {
+  flex: 1;
+  padding: 1rem;
+  overflow: hidden; /* 多餘內容影藏 */
+}
+#product-sales .f-carousel__dots {
+  display: none;
+}
+#product-sales .f-button.is-next {
+  border-radius: 50%;
+  background-color: lightgray;
+  margin-right: 1rem;
+}
+#product-sales .f-button.is-prev {
+  border-radius: 50%;
+  background-color: lightgray;
+  margin-left: 1rem;
 }
