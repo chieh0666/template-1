@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>模板一</title>
+  <title>模板一&nbsp;-&nbsp;登入</title>
   <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="./fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -141,8 +141,8 @@
           <form action="#" method="POST" novalidate>
             <div class="input-group has-validation mb-3">
               <div class="form-floating is-invalid">
-                <input type="text" class="form-control is-invalid" id="accountInput" placeholder="請輸入電話或電子信箱" required>
-                <label for="accountInput">電話或電子信箱</label>
+                <input type="text" class="form-control is-invalid" name="account" id="account" placeholder="請輸入電話或電子信箱" required>
+                <label for="account">電話或電子信箱</label>
               </div>
               <div class="invalid-feedback">
                 沒有註冊資料。
@@ -150,15 +150,15 @@
             </div>
             <div class="input-group has-validation mb-3">
               <div class="form-floating is-invalid">
-                <input type="text" class="form-control is-invalid" id="passwordInput" placeholder="請輸入密碼" required>
-                <label for="floatingInputGroup2">密碼</label>
+                <input type="text" class="form-control is-invalid" name="password" id="password" placeholder="請輸入密碼" required>
+                <label for="password">密碼</label>
               </div>
               <div class="invalid-feedback">
                 密碼錯誤，必須8-20個字元長度。
               </div>
             </div>
             <div class="form-check mb-3">
-              <input class="form-check-input " type="checkbox" value="" id="rememberMe">
+              <input class="form-check-input " type="checkbox" name="rememberMe" id="rememberMe">
               <label class="form-check-label" for="rememberMe">
                 保持登入
               </label>
