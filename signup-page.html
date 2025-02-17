@@ -140,48 +140,46 @@
         <form action="#" method="POST" novalidate>
           <div class="row justify-content-center">
             <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-last-name" class="form-label">姓氏</label>
-              <input type="text" class="form-control is-invalid" id="for-last-name" value="" required>
+              <label for="last-name" class="form-label">姓氏</label>
+              <input type="text" class="form-control is-invalid" name="last-name" id="last-name" placeholder="請輸入姓氏" value="" required>
               <div class="invalid-feedback">
                 不得為空值!
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-first-name" class="form-label">名字</label>
-              <input type="text" class="form-control is-invalid" id="for-first-name" value="" required>
+              <label for="first-name" class="form-label">名字</label>
+              <input type="text" class="form-control is-invalid" name="first-name" id="first-name" placeholder="請輸入名字" value="" required>
               <div class="invalid-feedback">
                 不得為空值!
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-nickname" class="form-label">暱稱</label>
-              <input type="text" class="form-control is-invalid" id="for-first-name" value="" required>
+              <label for="nickname" class="form-label">暱稱</label>
+              <input type="text" class="form-control is-invalid" name="nickname" id="nickname" placeholder="請輸入暱稱" value="" required>
               <div class="invalid-feedback">
                 不得為空值!
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-gender" class="form-label d-block">性別</label>
-                <input type="radio" class="btn-check" name="gender" id="primary-outlined" value="M" required>
-                <label class="btn btn-outline-primary" for="primary-outlined">男性</label>
-
-                <input type="radio" class="btn-check" name="gender" id="danger-outlined" value="F" required>
-                <label class="btn btn-outline-danger" for="danger-outlined">女性</label>
-
-                <input type="radio" class="btn-check" name="gender" id="secondary-outlined" value="O" required>
-                <label class="btn btn-outline-secondary" for="secondary-outlined">其他</label>
+              <label for="gender" class="form-label d-block">性別</label>
+                <input type="radio" class="btn-check" name="gender" id="male" value="M" required>
+                <label class="btn btn-outline-primary" for="male">男性</label>
+                <input type="radio" class="btn-check" name="gender" id="female" value="F" required>
+                <label class="btn btn-outline-danger" for="female">女性</label>
+                <input type="radio" class="btn-check" name="gender" id="others" value="O" required>
+                <label class="btn btn-outline-secondary" for="others">其他</label>
             </div>
             <div class="col-lg-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-account" class="form-label">手機號碼或電子郵件地址</label>
-              <input type="email" class="form-control is-invalid" id="for-account" value="" required>
+              <label for="account" class="form-label">電子郵件地址</label>
+              <input type="email" class="form-control is-invalid" name="account" id="account" placeholder="請輸入電子郵件地址" value="" required>
               <div class="invalid-feedback">
                 不得為空值!
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-first-name" class="form-label">設定密碼</label>
-              <input type="password" class="form-control is-invalid" id="validationServer01" value="" required>
-              <span id="passwordInput" class="form-text">
+              <label for="password" class="form-label">設定密碼</label>
+              <input type="password" class="form-control is-invalid" name="password" id="password" placeholder="請輸入密碼" value="" required>
+              <span id="password" class="form-text">
                 必須8-20個字元長度。
               </span>
               <div class="invalid-feedback">
@@ -189,15 +187,13 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mb-3">
-              <label for="for-first-name" class="form-label">確認密碼</label>
-              <input type="password" class="form-control is-invalid" id="validationServer01" value="" required>
+              <label for="confirm-password" class="form-label">確認密碼</label>
+              <input type="password" class="form-control is-invalid" name="confirm-password" id="confirm-password" value="" required>
               <div class="invalid-feedback">
                 不得為空值!
               </div>
             </div>
-            <!-- <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-0 mt-5"> -->
-              <button class="btn btn-primary col-3 mt-5" type="submit">註冊</button>
-            <!-- </div> -->
+            <button type="submit" class="btn btn-primary col-3 mt-5">註冊</button>
           </div>
         </form>
       </div>
